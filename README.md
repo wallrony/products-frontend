@@ -2,7 +2,7 @@
 
 Autor: Wallisson Rony de M. N.
 
-Este é um repositório que apresenta um CRUD simples para o repositório "products_backend", que é um backend presente nesse repositório: <a href="https://github.com/wallrony/products-backend">https://github.com/wallrony/products-backend</a>. Além desse, este projeto tem relação com o projeto presente no repositório <a href="https://github.com/wallrony/products-mobile" target="_blank">Mobile</a>, que é um app mobile feito em Flutter que também utiliza o mesmo backend.
+Este é um repositório que apresenta um CRUD simples para manipulação de produtos. Este projeto tem alguns projetos relacionados, como o repositório com o projeto <a href="https://github.com/wallrony/products-backend">Backend</a> e o repositório com o projeto <a href="https://github.com/wallrony/products-mobile" target="_blank">Mobile</a>.
 
 O projeto tem como principal objetivo apresentar o CRUD de produtos, entidade essa que a seguinte estrutura:
 
