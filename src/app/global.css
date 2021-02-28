@@ -1,0 +1,47 @@
+@font-face {
+  src: url(../assets/fonts/montserrat.ttf);
+  font-family: 'Montserrat';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font: 400 90% 'Montserrat';
+
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: orangered;
+  --background-color: rgba(111, 111, 111, .1);
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body, button, input, label {
+  font-family: 'Montserrat';
+}
+
+.ant-message {
+  font-size: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid.col-2 {
+  grid-template-columns: 1fr 1fr;
+
+  gap: .5rem;
+}
+
+@media (max-width: 768px) {
+  .grid.col-2 {
+    grid-template-columns: 1fr;
+  }
+}

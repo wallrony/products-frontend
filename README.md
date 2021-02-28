@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Meus Produtos - Frontend WEB
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Autor: Wallisson Rony de M. N.
 
-## Available Scripts
+Este é um repositório que apresenta um CRUD simples para o repositório "products_backend", que é um backend presente nesse repositório: <a href="https://github.com/wallrony/products-backend">https://github.com/wallrony/products-backend</a>. Além desse, este projeto tem relação com o projeto presente no repositório <a href="https://github.com/wallrony/products-mobile" target="_blank">Mobile</a>, que é um app mobile feito em Flutter que também utiliza o mesmo backend.
 
-In the project directory, you can run:
+O projeto tem como principal objetivo apresentar o CRUD de produtos, entidade essa que a seguinte estrutura:
 
-### `yarn start`
+```json
+{
+  "name": "Nome do produto",
+  "price": "Preço do produto",
+  "image_path": "Link da imagem do produto (facultativo)"
+}
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Features Implementadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Sistema de roteamento e esqueleto das páginas (fica adaptável para futuras implementações mais elaboradas/com mais rotas);
+- Listagem de produtos;
+- Adição de um produto (nome, preço e imagem);
+- Alteração de um produto (nome, preço e imagem);
+- Exclusão de um produto por id;
+- Responsividade;
+- Componentização;
+- Organização de camadas da aplicação:
+- 1. View;
+- 2. Context/Provider;
+- 3. Service;
+- 4. Facade;
+- 5. API Class (para enviar requisição para o backend).
+- Estilização.
 
-### `yarn test`
+### Features Pendentes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Dark mode;
 
-### `yarn build`
+## Como Executar?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Dê um git clone do repositório para obtê-lo por completo;
+- Entre na pasta do projeto;
+- Execute `yarn` ou `npm install` para instalar todas as dependências do projeto;
+- Crie o arquivo .env e preencha a variável "REACT_APP_API_URL", seguindo o modelo apresentado no arquivo .env.example;
+- Inicie o backend (caso não tenha baixado, é só baixar o repositório do backend pelo link disponibilizado lá em cima e seguir o README.md para instalar/configurar e inicializar);
+- Em caso de erro com a comunicação com o backend e você esteja utilizando "localhost" na variável "REACT_APP_API_URL", tente alterá-la para o seu IP;
+- Execute `yarn start` ou `npm run start` para iniciar a aplicação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+E é isso, você está executando a aplicação frontend do projeto de produtos!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Qualquer dúvida, crie uma issue que te responderei assim que possível!

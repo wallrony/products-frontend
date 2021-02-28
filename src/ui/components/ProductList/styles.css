@@ -1,0 +1,124 @@
+.app-product-list > header {
+  padding: 2rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-product-list > header strong {
+  font-size: 1.75rem;
+}
+
+.app-product-list > header > div :first-child { 
+  margin-right: 16px;
+}
+
+.app-product-list > header > div * {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.app-product-list > p {
+  font-size: 1.5rem;
+
+  padding: 1rem 2rem;
+}
+
+.app-product-list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 1rem;
+
+  padding: 0 1.5rem;
+}
+
+.app-product-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: .5rem 1rem;
+
+  margin: 0 !important;
+
+  box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.app-product-list ul li div {
+  display: flex;
+}
+
+.app-product-list ul li > div {
+  align-items: center;
+}
+
+.app-product-list ul li > div:first-child > div {
+  font-size: 1.5rem;
+
+  flex-direction: column;
+}
+
+.app-product-list ul li > div:first-child img + div {
+  margin-left: 8px;
+}
+
+.app-product-list ul li > div:first-child img {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background-size: cover;
+}
+
+.app-product-list ul li > div:last-child :first-child {
+  margin-right: 1rem;
+
+  color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+  .app-product-list ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-product-list ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .app-product-list > header {
+    padding: 1.5rem 1rem;
+  }
+
+  .app-product-list > header strong {
+    font-size: 1.25rem;
+  }
+
+  .app-product-list > header > div :first-child {
+    margin-right: 0;
+  }
+
+  .app-product-list > header > div * {
+    width: 32px;
+    height: 32px;
+  }
+
+  .app-product-list ul li > div:last-child * {
+    width: 24px;
+    height: 24px;
+  }
+
+  .app-product-list ul li > div:first-child {
+    font-size: 1.25rem;
+  }
+}

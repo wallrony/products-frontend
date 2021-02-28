@@ -1,0 +1,115 @@
+.app-input-group {
+  position: relative;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  background-color: white;
+
+  box-shadow: 0 0 5px var(--shadow);
+
+  padding: 1rem 1rem;
+
+  margin: .5rem 0;
+}
+
+.app-input-group.filetype {
+  margin: 1rem 0;
+  padding: 0;
+
+  transition: filter .25s;
+}
+
+.app-input-group.filetype:hover {
+  filter: brightness(.8);
+}
+
+.app-input-group label {
+  position: absolute;
+
+  margin-bottom: 4px;
+
+  font-weight: 600;
+
+  opacity: .4;
+
+  font-size: 1.5rem;
+
+  transition: .1s ease;
+}
+
+.app-input-group input {
+  font-size: 1.25rem;
+
+  border: none;
+
+  border-bottom: 1px solid grey;
+
+  transition: margin-top .1s;
+  transition: border-color .3s;
+
+  z-index: 2;
+  background-color: transparent;
+}
+
+.app-input-group input:focus {
+  outline: none;
+
+  border-color: var(--primary-color);
+}
+
+.app-input-group input:focus + label,
+.app-input-group input:valid + label {
+  color: var(--primary-color);
+
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app-input-group input:not([type='file']):focus,
+.app-input-group input:not([type='file']):valid {
+  margin-top: 1.5rem;
+}
+
+.app-input-group input[type='file'] {
+  display: none;
+}
+
+.app-input-group.filetype .div-input-file {
+  width: 100%;
+
+  padding: 1.5rem;
+
+  font-size: 1.5rem;
+  text-align: center;
+
+  cursor: pointer;
+
+  background-color: var(--shadow);
+}
+
+.app-input-group.filetype > div:first-child {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-input-group.filetype > div:first-child > img {
+  max-height: 300px;
+  
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .app-input-group label {
+    font-size: 1.25rem;
+  }
+
+  .app-input-group input {
+    font-size: 1rem;
+  }
+}

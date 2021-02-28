@@ -1,0 +1,28 @@
+.app-form > button[type=submit] {
+  font-size: 2rem;
+  color: white;
+
+  width: 100%;
+
+  background-color: var(--primary-color);
+
+  border: none;
+  border-radius: 8px;
+
+  box-shadow: 1px 1px 50px var(--shadow);
+
+  margin-top: 1rem;
+  padding: .5rem 2rem;
+
+  transition: filter .2s;
+}
+
+.app-form > button[type=submit]:hover {
+  filter: brightness(.9);
+}
+
+@media (max-width: 768px) {
+  .app-form > button[type=submit] {
+    font-size: 1.5rem;
+  }
+}
